@@ -1,4 +1,4 @@
-# Hello, I'm Adam Davis
+# Adam Davis - Senior Technical Writer
 
 I'm a Senior Technical Writer who specializes in writing clear, user-friendly documentation for both internal and external audiences.
 
