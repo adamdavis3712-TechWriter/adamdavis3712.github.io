@@ -96,6 +96,17 @@ details p {
 #about li {
   margin-bottom: 0.5rem;
 }
+    .card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
   </style>
 </head>
 <body>
@@ -116,18 +127,40 @@ details p {
 <section id="portfolio">
   <h2>Portfolio</h2>
 
-  <div class="project">
-    <h3>API Documentation Project</h3>
-    <p><strong>Overview:</strong> Created REST API documentation for internal platform.</p>
-    <p><strong>Tools:</strong> Markdown, Swagger</p>
-    <p><strong>Impact:</strong> Reduced support tickets and improved developer onboarding.</p>
+  <!-- SAMPLE 1 -->
+  <div class="card">
+    <h3>Release Notes Documentation</h3>
+    <p class="meta">Product Communication • SaaS Platform</p>
+
+    <p>
+      Created structured release notes to clearly communicate new features, enhancements, and resolved issues to end users. Focused on clarity, scannability, and reducing ambiguity in product updates.
+    </p>
+
+    <ul>
+      <li><strong>Type:</strong> User-facing documentation</li>
+      <li><strong>Focus:</strong> Clarity, structure, and usability</li>
+      <li><strong>Highlights:</strong> Feature breakdowns, categorized updates, audit-friendly formatting</li>
+    </ul>
+
+    <a href="Generic Release Notes.pdf" target="_blank">View Sample</a>
   </div>
 
-  <div class="project">
-    <h3>User Guide Redesign</h3>
-    <p><strong>Overview:</strong> Rewrote and restructured a legacy user manual.</p>
-    <p><strong>Tools:</strong> MadCap Flare, Microsoft Word</p>
-    <p><strong>Impact:</strong> Increased usability and reduced customer confusion.</p>
+  <!-- SAMPLE 2 -->
+  <div class="card">
+    <h3>Git User Guide for Developers</h3>
+    <p class="meta">SOP • Developer Documentation</p>
+
+    <p>
+      Developed a step-by-step procedural guide for developers working with Git and Azure DevOps. Designed to support onboarding, reduce errors, and standardize workflows across teams.
+    </p>
+
+    <ul>
+      <li><strong>Type:</strong> Standard Operating Procedure (SOP)</li>
+      <li><strong>Audience:</strong> Developers</li>
+      <li><strong>Highlights:</strong> Step-by-step workflows, branching strategy, merge conflict resolution</li>
+    </ul>
+
+    <a href="GIT User Guide for Developers.pdf" target="_blank">View Sample</a>
   </div>
 
 </section>
