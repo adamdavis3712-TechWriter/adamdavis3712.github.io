@@ -49,6 +49,33 @@
       color: #fff;
       margin-top: 2rem;
     }
+    .recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
   </style>
 </head>
 <body>
@@ -127,32 +154,39 @@
 
 <section id="recommendations">
   <h2>Recommendations</h2>
-  <div class="project">
-    <h3>Valerie Guerin</h3>
-    <p><strong>Title:</strong> Senior Instructional Designer</p>
-    <p><strong>Organization</strong> Hexure</p>
-    <p>"I’ve had the pleasure of working with Adam, and he is one of the most talented technical writers I’ve partnered with. His ability to take complex, highly technical systems and translate them into clear, accessible reference documentation was pivotal in building our document management foundation. Adam approaches every project with a positive attitude, thoughtful questions, and a commitment to getting it right, qualities that make him an incredible collaborator and an invaluable asset to any team. I’m grateful for the impact he’s had on our organization and recommend him wholeheartedly."</p>
-    <h3>Brent Neumeier</h3>
-    <p><strong>Title:</strong> Instructional Designer</p>
-    <p><strong>Organization</strong> Hexure</p>
-    <p>"I work with Adam at Hexure and he is an exceptional technical writer whose clarity, precision, and professionalism consistently keeps clients in the know and employees reading more. Throughout our time working together, I’ve been impressed by his ability to transform complex, highly technical concepts into accessible, well‑structured documentation that serves both employee and client audiences. He asks smart questions, quickly grasp new systems, and produces documentation that is not only accurate but genuinely useful. He is a pleasure to work with."</p>
-    <h3>Sheila Loring</h3>
-    <p><strong>Title:</strong> Senior Technical Writer</p>
-    <p><strong>Organization</strong> Solomon Page</p>
-    <p>"I worked with Adam for nearly a year and found him to be one of the most proactive writers I've worked with. We collaborated on some projects I had no experience with, and I appreciated the fact that he had innovative ideas and knew some tools better than I did. Better yet, he's a pleasure to work with. He's friendly, very encouraging to everyone, and always an uplifting part of my day. If you have the chance, snap him up."</p>
-    <h3>Nicole Edens</h3>
-    <p><strong>Title:</strong> Technical Writing Manager</p>
-    <p><strong>Organization</strong> Jack Henry</p>
-    <p>"Adam and I worked together for six months while he was a contractor at Jack Henry. During his time, he quickly earned the respect of his peers and development teams for his quick understanding and attention to detail while documenting product features and functions. He not only took time to understand the entire project, but he also made a point to form relationships with each of his team members. Our 1:1 meetings were spent getting to know one another - family, food, movies, books, traditions, weekend plans - and I could tell he truly cared about me and my family. Adam has a positive outlook on life. Any team will be blessed to have him as a writer and leader."</p>
-    <h3>Randall Danner</h3>
-    <p><strong>Title:</strong> Employee Safety and Risk Manager</p>
-    <p><strong>Organization:</strong> Idaho Transportation Department</p>
-    <p>
-      "I had the pleasure of hiring Adam Davis as a Technical Writer to assist in editing the rewrite of our Employee Safety Manual. He was instrumental in formatting our document, standardizing the flow and correcting vague or unclear language. Adam collaborated with the eight members of our safety team to bring content together and create a comprehensive 200+ page safety guidance document. We worked extensively across the MS Word and MS Teams virtual platform to view, edit and share documents and ideas.
-    </p>
-    <p>
-      I found Adam to be a very positive, friendly and an extremely capable collaborator. He accomplished all assigned tasks in a swift and efficient manner. His work was error free. The position was unfortunately a short-term internship and ended when he completed his degree. I would highly recommend him for any position. His drive and self-motivation will propel him to succeed at any occupation."
-    </p>
+
+  <div class="recommendation-grid">
+
+    <div class="card">
+      <h3>Valerie Guerin</h3>
+      <p class="meta">Senior Instructional Designer • Hexure</p>
+      <p>"I’ve had the pleasure of working with Adam, and he is one of the most talented technical writers I’ve partnered with..."</p>
+    </div>
+
+    <div class="card">
+      <h3>Brent Neumeier</h3>
+      <p class="meta">Instructional Designer • Hexure</p>
+      <p>"I work with Adam at Hexure and he is an exceptional technical writer whose clarity, precision..."</p>
+    </div>
+
+    <div class="card">
+      <h3>Sheila Loring</h3>
+      <p class="meta">Senior Technical Writer • Solomon Page</p>
+      <p>"I worked with Adam for nearly a year and found him to be one of the most proactive writers..."</p>
+    </div>
+
+    <div class="card">
+      <h3>Nicole Edens</h3>
+      <p class="meta">Technical Writing Manager • Jack Henry</p>
+      <p>"Adam and I worked together for six months while he was a contractor..."</p>
+    </div>
+
+    <div class="card">
+      <h3>Randall Danner</h3>
+      <p class="meta">Employee Safety and Risk Manager • Idaho Transportation Department</p>
+      <p>"I had the pleasure of hiring Adam Davis as a Technical Writer to assist in editing..."</p>
+    </div>
+
   </div>
 </section>
 
